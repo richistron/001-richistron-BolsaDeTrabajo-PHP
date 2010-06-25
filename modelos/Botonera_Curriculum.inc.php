@@ -9,7 +9,7 @@ $echo .= "
          
         <td  align=\"\" width=\"\">
         
-            <a href=\"$super_index/BolsaAdd?Curriculum=DatosPersonales\" 
+            <a href=\"?Curriculum=DatosPersonales\" 
             onMouseover=\"Permut(1,'datos-personales1');\" 
             onMouseout=\"Permut(0,'datos-personales1');\">
             
@@ -25,7 +25,7 @@ $echo .= "
         
         <td  align=\"\" width=\"\">
         
-            <a href=\"$super_index/BolsaAdd?Curriculum=InformacionAcademica\" 
+            <a href=\"?Curriculum=InformacionAcademica\" 
             onMouseover=\"Permut(1,'InformacionAcademica');\" 
             onMouseout=\"Permut(0,'InformacionAcademica');\">
             
@@ -42,7 +42,7 @@ $echo .= "
         
         <td  align=\"\" width=\"\">
         
-            <a href=\"$super_index/BolsaAdd?Curriculum=ExperienciaLaboral\" 
+            <a href=\"?Curriculum=ExperienciaLaboral\" 
             onMouseover=\"Permut(1,'ExperienciaLaboral');\" 
             onMouseout=\"Permut(0,'ExperienciaLaboral');\">
             
@@ -58,7 +58,7 @@ $echo .= "
         
         <td  align=\"\" width=\"\">
         
-            <a href=\"$super_index/BolsaAdd?Curriculum=ConocimientosHabilibades\" 
+            <a href=\"?Curriculum=ConocimientosHabilibades\" 
             onMouseover=\"Permut(1,'ConocimientosHabilibades');\" 
             onMouseout=\"Permut(0,'ConocimientosHabilibades');\">
             
@@ -74,7 +74,7 @@ $echo .= "
         
         <td  align=\"\" width=\"\">
         
-            <a href=\"$super_index/BolsaAdd?Curriculum=PreferenciasLaborales\" 
+            <a href=\"?Curriculum=PreferenciasLaborales\" 
             onMouseover=\"Permut(1,'PreferenciasLaborales');\" 
             onMouseout=\"Permut(0,'PreferenciasLaborales');\">
             
