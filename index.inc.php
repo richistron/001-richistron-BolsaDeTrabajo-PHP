@@ -6,50 +6,56 @@ include "etc/globals.inc.php";
 
 switch ($modelo)
 {
-    case "pruebas":
+    case "BolsaAdd": // Inteligente ( Añadir curriculum )
         include $include;
         break;
         
-    case "botonera":
+    case "popup":  
         include $include;
         break;
         
-    case "botonera_lateral":
+    case "pruebas": // solo preubas
         include $include;
         break;
         
-    case "Bolsa":
+    case "botonera": // no envia mensajes
         include $include;
         break;
         
-    case "Inicio":
+    case "botonera_lateral": // no envia mensajes
         include $include;
         break;
         
-    case "Acerca":
+    case "Botonera_Curriculum": // // no envia mensajes
+        include $include;
+        break;              
+        
+    case "Bolsa": // pendinte
         include $include;
         break;
         
-    case "Servicios":
+    case "Inicio": // informativo
         include $include;
         break;
         
-    case "Consultores":
+    case "Acerca": // informativo
         include $include;
         break;
         
-    case "Miembros":
+    case "Servicios": // informativo
         include $include;
         break;
         
-    case "BolsaAdd":
+    case "Consultores": // informativo
         include $include;
-        break;   
+        break;
         
-    case "Botonera_Curriculum":
+    case "Miembros": // informativo
         include $include;
-        break; 
-             
+        break;       
+     
+        
+    
     default:
         $echo .= "<div class=\"error\">No se ha seleccionado nigun tipo de vista</div>";
         break;

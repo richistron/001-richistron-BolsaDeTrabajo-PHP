@@ -226,4 +226,32 @@ $echo .= "
 	 			
 	 			";
 	 			
+	 			/*
+	 			
+	 			<p>This link uses the onclick event handler.<br>
+<a href="#" onclick="setVisible('layer1');return false" target="_self">Open popup</a></p>
+
+<p>This next one uses the javascript link inside the href tag.<br>
+<a href="javascript:setVisible('layer1',true)">Open popup</a></p>
+
+<form>
+And this one uses the input button inside a form tag.<br>
+  <input type="button" value="Open popup" onclick="setVisible('layer1')">
+</form>
+
+<p>It can also be used in an image map. Here, the word 'Webhost' contains the link<br>
+<img src="award.gif" width="120" height="65" border="0" usemap="#Map">
+  <map name="Map" id="Map">
+    <area shape="rect" coords="1,1,113,23" href="#" onclick="setVisible('layer1');return false" target="_self">
+  </map>
+</p>
+
+<script type="text/javascript">
+setVisible('layer1',true)
+</script>
+	 			*/
+	 			
 ?>
+
+
+
