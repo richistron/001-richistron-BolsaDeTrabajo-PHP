@@ -4,6 +4,8 @@
 include "etc/globals.inc.php";
 
 
+
+
 switch ($modelo)
 {
     case "BolsaAdd": // Inteligente ( Añadir curriculum )
@@ -30,7 +32,7 @@ switch ($modelo)
         include $include;
         break;              
         
-    case "Bolsa": // pendinte
+    case "Bolsa": // inteligente
         include $include;
         break;
         
