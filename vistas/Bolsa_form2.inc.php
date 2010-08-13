@@ -6,7 +6,10 @@ $echo .= "
 
 <form method=\"post\" id=\"Informacion_Academica_form\" name=\"Informacion_Academica_form\" >
 
-	<tr>
+<table id=\"informacionAcademicaTable\" style=\"display:none;\">
+
+
+	<tr height=\"40px\">
 	
 		<td>
 		
@@ -16,7 +19,7 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 
 		<td>
 	
@@ -27,7 +30,7 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 
 		<td>
 	
@@ -38,7 +41,7 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 
 		<td>
 	
@@ -52,7 +55,7 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 
 		<td>
 	
@@ -65,7 +68,7 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 
 		<td>
 	
@@ -78,7 +81,7 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
@@ -101,7 +104,7 @@ $echo .= "
 	
 	
 	
-	<tr>
+	<tr height=\"40px\">
 
 		<td>
 	
@@ -112,7 +115,7 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 
 		<td>
 	
@@ -123,7 +126,7 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 
 		<td>
 	
@@ -137,7 +140,7 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 
 		<td>
 	
@@ -150,7 +153,7 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 
 		<td>
 	
@@ -175,7 +178,7 @@ $echo .= "
 	
 	
 
-	<tr>
+	<tr height=\"40px\">
 
 		<td>
 
@@ -197,7 +200,7 @@ $echo .= "
 	
 	</tr>
 
-
+</table>
 
 </form>
             ";

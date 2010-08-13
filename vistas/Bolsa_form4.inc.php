@@ -6,9 +6,9 @@ $echo .= "
 
 
 	
+<table id=\"ConocimientosHabilibadesTable\" style=\"display:none;\">
 	
-	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
@@ -18,38 +18,57 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
 			
 			 <strong>
 				Idioma y Porcentaje que domina
-				 </strong>( ejemplo: Ingles 100% )
+				 </strong>( ejemplo: Ingles 100% ):
+				
+		</td>
+		
+		</tr>
+		
+	<tr height=\"40px\">
+	
+		<td>
+		
+			
+
+
+
+				Idioma 1 
 				<input type=\"text\" name=\"Idioma1\" value=\"$Idioma1\" size=\"10\" >
 				
 		</td>
 		
-	<tr>
+		</tr>
+		
+		
+	<tr height=\"40px\">
 	
 		<td>
 
-				<strong>
-				Idioma y Porcentaje que domina 
-				</strong>( ejemplo: Frances 75% )
+
+
+
+				Idioma 2 
 				<input type=\"text\" name=\"Idioma2\" value=\"$Idioma2\" size=\"10\">
 				
 		</td>
 				
 	</tr>
 			
-	<tr>
+	<tr height=\"40px\">
 	
 			
 		<td>	
-				<strong>
-				Idioma y Porcentaje que domina </strong>
-				( ejemplo: Aleman 40% )
+
+
+
+				Idioma 3 
 				<input type=\"text\" name=\"Idioma3\" value=\"$Idioma3\" size=\"10\" >
 				
 				
@@ -63,7 +82,7 @@ $echo .= "
 	
 	
 	
-	<tr>
+	<tr height=\"40px\">
 	
 	
 		<td>
@@ -72,32 +91,52 @@ $echo .= "
 			<strong>
 				Software y Porcentaje que domina 
 				</strong>( ejemplo: Word 100% )
+
+				
+		</td>
+		
+		</tr>
+		
+		
+	<td>
+		
+			
+
+
+
+				Software 1
 				<input type=\"text\" name=\"Soft1\" value=\"$Soft1\" size=\"10\">
 				
 		</td>
 		
-		
-	<tr>
-	
-		<td>
-
-				<strong>
-				Idioma y Porcentaje que domina
-				 </strong> ( ejemplo: Visual Basic 75% )
-				<input type=\"text\" name=\"Soft2\" value=\"$Soft2\" size=\"10\">
-				
-		</td>
-		
-				
-	</tr>
+		</tr>
 			
-	<tr>
+	<tr height=\"40px\">
 			
 		<td>	
 		
 
-				<strong>Idioma y Porcentaje que domina
-				</strong> ( ejemplo: Photoshop 40% )
+
+
+				Software 2 
+				<input type=\"text\" name=\"Soft2\" value=\"$Soft2\" size=\"10\" >
+				
+				
+				
+		
+		</td>
+	
+	
+	</tr>
+	
+		<tr height=\"40px\">
+			
+		<td>	
+		
+
+
+
+				Software 3
 				<input type=\"text\" name=\"Soft3\" value=\"$Soft3\" size=\"10\" >
 				
 				
@@ -112,7 +151,7 @@ $echo .= "
 
 
 
-	<tr>
+	<tr height=\"40px\">
 	
 	
 		<td>
@@ -128,6 +167,8 @@ $echo .= "
 
 
 	</tr>
+	
+</table>
 
 
 </form>

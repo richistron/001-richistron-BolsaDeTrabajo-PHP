@@ -1,3 +1,13 @@
+<script type="text/javascript">
+function mostrarDiv(id)
+{
+    if (document.getElementById)
+    {
+        var currentDiv = document.getElementById(id);        
+        currentDiv.style.display = (currentDiv.style.display == 'none') ? 'block' : 'none';        
+    }
+}
+</script>
 <?php 
 
 #$readonly = "readonly=\"readonly\"";
@@ -14,7 +24,19 @@ $echo .= "
 			<table cellpadding=\"$cellpadding\" cellspacing=\"$cellspacing\" border=\"$border\" >
 			
 				";
+
 				
+include "/$home/vistas/Bolsa_form1.inc.php";
+
+include "/$home/vistas/Bolsa_form2.inc.php";
+
+include "/$home/vistas/Bolsa_form3.inc.php";
+
+include "/$home/vistas/Bolsa_form4.inc.php";
+  
+include "/$home/vistas/Bolsa_form5.inc.php";
+
+/*				
 if (isset($_GET['Curriculum']) == FALSE)	
 {
 
@@ -24,6 +46,11 @@ if (isset($_GET['Curriculum']) == FALSE)
 }
 else
 {
+
+
+
+            
+    
     $Curriculum = $_GET['Curriculum'];
     
     switch ("$Curriculum")
@@ -53,9 +80,12 @@ else
         default:
             header("location: ?Curriculum=DatosPersonales");
             break;
+           
             
     }
+     
 }
+*/
 				
 
 /*

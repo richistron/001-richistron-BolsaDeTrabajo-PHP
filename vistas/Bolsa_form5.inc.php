@@ -7,10 +7,12 @@ $echo .= "
 
 
 
-<form method=\"post\" name=\"formulario numero 5\" >
+<form method=\"post\" name=\"formulario numero 5\" onsubmit=\"return formCinco(this)\" action=\"\">
+
+<table id=\"preferenciasLaborales\" style=\"display:none;\">
 
 
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
@@ -21,18 +23,18 @@ $echo .= "
 	</tr>
 	
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
 			<strong>Sueldo Minimo deseado <font color=\"red\">*</font></strong>
-			<input type=\"text\" name=\"SuledoMinimo\" value=\"$SuledoMinimo\" size=\"25\">
+			<input type=\"text\" name=\"SuledoMinimo\" id=\"SuledoMinimo\" value=\"$SuledoMinimo\" size=\"25\">
 			
 		</td>
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
@@ -44,31 +46,28 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>				
 				
 
 				
-				Diario
-				<input type=\"radio\" name=\"PreferenciaPago\" value=\"Diario\">
-				
-				Semanal
-				<input type=\"radio\" name=\"PreferenciaPago\" value=\"Semanal\">
-				
-				Quincenal
-				<input type=\"radio\" name=\"PreferenciaPago\" value=\"Quicenal\">
-				
-				Mensual
-				<input type=\"radio\" name=\"PreferenciaPago\" value=\"Mensual\">
-			
+		
+			<select name=\"PreferenciaPago\" id=\"PreferenciaPago\" >
+			    <option value=\"\"></option>
+			    <option value=\"Diario\">Diario</option>	
+			    <option value=\"Semanal\">Semanal</option>
+			    <option value=\"Quicenal\">Quincenal</option>
+			    <option value=\"Mensual\">Mensual</option>					
+		
+		    </select>
 			
 			
 		</td>
 		
 	</tr>	
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
@@ -79,26 +78,21 @@ $echo .= "
 	</tr>
 	
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>				
 				
-
 				
-				Matutino
-				<input type=\"radio\" name=\"HorarioPreferido\" value=\"Matutino\">
+				<select name=\"HorarioPreferido\" id=\"HorarioPreferido\">
+				    <option value=\"\"></option>
+				    <option value=\"Matutino\">Matutino</option>
+				    <option value=\"Vespertino\">Vespertino</option>
+				    <option value=\"Nocturno\">Nocturno</option>
+				    <option value=\"Mixto\">Mixto</option>
+				    <option value=\"Disponibilidad\">Disponibilidad Total</option>
+				</select>
 				
-				Vespertino
-				<input type=\"radio\" name=\"HorarioPreferido\" value=\"Vespertino\">
 				
-				Nocturno
-				<input type=\"radio\" name=\"HorarioPreferido\" value=\"Nocturno\">
-				
-				Mixto
-				<input type=\"radio\" name=\"HorarioPreferido\" value=\"Mixto\">
-				
-				Disponibilidad Total
-				<input type=\"radio\" name=\"HorarioPreferido\" value=\"Disponibilidad_Total\">
 			
 			
 			
@@ -106,7 +100,7 @@ $echo .= "
 		
 	</tr>	
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
@@ -117,20 +111,17 @@ $echo .= "
 	</tr>
 	
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>				
 				
 
-				
-				Lunes a Viernes
-				<input type=\"radio\" name=\"DiasTrabajo\" value=\"Lun-Vie\">
-				
-				Lunes a Sabado
-				<input type=\"radio\" name=\"DiasTrabajo\" value=\"Lun-Vie\">
-				
-				Indistinto
-				<input type=\"radio\" name=\"DiasTrabajo\" value=\"Idistinto\">
+				<select name=\"DiasTrabajo\" id=\"DiasTrabajo\">
+				    <option value=\"\"></option>
+				    <option value=\"Lunes a Viernes\">Lunes a Viernes</option>
+				    <option value=\"Lunes a Sabado\">Lunes a Sabado</option>
+				    <option value=\"Indistinto\">Indistinto</option>
+				</select>			
 				
 				
 			
@@ -139,20 +130,20 @@ $echo .= "
 		
 	</tr>	
 	
-		<tr>
+		<tr height=\"40px\">
 	
 		<td>				
 				
 			<strong>Tiene Licencia <font color=\"red\">*</font></strong>
 			
 
-				
-				Si
-				<input type=\"radio\" name=\"Licencia\" value=\"Si\">
-				
-				No
-				<input type=\"radio\" name=\"Licencia\" value=\"No\">				
-				
+				<select name=\"Licencia\" id=\"Licencia\">
+				    <option value=\"\"></option>
+				    <option value=\"Si\">Si</option>
+				    <option value=\"No\">No</option>
+				    <option value=\"Vencida\">Vencida</option>
+				</select>					
+			
 			
 			
 			<strong>Tipo de Licencia </strong>
@@ -163,39 +154,45 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
 			<strong> Disponibilidad Para Viajar<font color=\"red\">*</font> </strong><br />
 			
-			Si
-			<input type=\"radio\" name=\"Viajar\" value=\"Si\" >
-			No
-			<input type=\"radio\" name=\"Viajar\" value=\"No\" >		
+			
+			<select name=\"Viajar\" id=\"Licencia\">
+				    <option value=\"\"></option>
+				    <option value=\"Si\">Si</option>
+				    <option value=\"No\">No</option>
+				</select>
+				
+					
 			
 		
 		</td>
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 		
 		<td>
 		
 			<strong>Disponibilidad de Reubicar <font color=\"red\">*</font></strong><br />
 			
-			Si
-			<input type=\"radio\" name=\"Reubicar\" value=\"Si\" >
 			
-			No
-			<input type=\"radio\" name=\"Reubicar\" value=\"No\" >
+			<select name=\"Reubicar\" id=\"Reubicar\">
+				    <option value=\"\"></option>
+				    <option value=\"Si\">Si</option>
+				    <option value=\"No\">No</option>
+				</select>
+			
 		
 		</td>
 	
 	</tr>	
 	
-	<tr>
+	<tr height=\"40px\">
 	
 	
 		<td>
@@ -210,11 +207,11 @@ $echo .= "
 	
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
-			<div align=\"\">
+			<div align=\"\" id=\"AreasDeInteres\">
 			
 				<ul>
 							
@@ -244,23 +241,25 @@ $echo .= "
 	
 	</tr>
 	
-	<tr></tr>
+	<tr height=\"40px\"></tr>
 	
 	
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
 			<div align=\"right\">
 			
-				<input type=\"submit\" name=\"5e010f4eed331e0f83ace37e7ec8745d\" value=\"Guardar Cambios\">
+				<input type=\"submit\" name=\"5e010f4eed331e0f83ace37e7ec8745d\" id=\"5e010f4eed331e0f83ace37e7ec8745d\" value=\"Guardar Cambios\">
 				
 			</div>
 			
 		</td>
 		
 	</tr>
+	
+</table>
 
 </form>
 

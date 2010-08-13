@@ -482,9 +482,23 @@ $query_editar = "UPDATE 00_Curriculum
 if ( $result_editar = $mysqli_connect->query($query_editar))
 {
 	$echo .= "
+	
+	
+	<div id=\"datosPersonalesOk\" display=\"block\">
 				<div class=\"ok\">
-					Los Cambios Fueron Exitosos
-				</div>";
+					Los Cambios Fueron Exitosos 
+					<a href=\"javascript:
+					mostrarDiv('datosPersonalesOk');
+					cerrarOpen();
+					mostrarDiv('informacionAcademicaTable');\" > 
+					    
+					    
+					    : Click para Continuar </a>
+					    
+					    
+				</div></div>
+				
+				";
 	
 	include "/$home/etc/bolsa_rows.inc.php";
 }

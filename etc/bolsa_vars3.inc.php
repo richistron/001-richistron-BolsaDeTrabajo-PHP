@@ -247,10 +247,7 @@ if (
 	)
 	
 	{
-		$echo .= "<div class=\"error\" id=\"datospersonales\" >
-					Rellena todos los campos marcados con <font color=\"red\">*</font>
-					 <a href=\"#ExperienciaLaboral\">Experiencia Laboral</a>
-					</div>";
+		$echo .= "rellena los campos obligatorios";
 		
 		include "/$home/vistas/Bolsa_view.inc.php";  return;
 		
@@ -357,12 +354,35 @@ $query_editar3 = "UPDATE 00_Curriculum
 if ( $result_editar3 = $mysqli_connect->query($query_editar3))
 {
 	$echo .= "
+				<div id=\"datosPersonalesOk3\" display=\"block\">
 				<div class=\"ok\">
-					Los Cambios Fueron Exitosos
-					<a href=\"#ExperienciaLaboral\">Experiencia Laboral</a>
-				</div>";
+					Los Cambios Fueron Exitosos 
+					<a
+					href=\"javascript:cerrarOpen();
+					mostrarDiv('ConocimientosHabilibadesTable');
+					mostrarDiv('datosPersonalesOk3');
+					\" >
+					
+					
+					    : Click para Continuar 
+					    
+					    
+					 </a>
+				</div>
+				</div>				
+				
+				";
 	
 	include "/$home/etc/bolsa_rows.inc.php";
+	
+	$echo .= "
+	
+	<script type=\"text/javascript\">
+	    cerrarOpen();
+	    mostrarDiv('ExperienciaLaboralTable');
+	</script>
+	
+	";
 }
 
 /*

@@ -249,6 +249,11 @@ if (
 		
 		include "/$home/vistas/Bolsa_view.inc.php";  return;
 		
+		
+		$echo .= "<script type=\"text/javascript\">
+	    cerrarOpen();
+	    mostrarDiv('preferenciasLaborales');
+	</script>";
 	
 		
 
@@ -352,12 +357,34 @@ $query_editar = "UPDATE 00_Curriculum
 if ( $result_editar = $mysqli_connect->query($query_editar))
 {
 	$echo .= "
+				<div id=\"datosPersonalesOk5\" display=\"block\">
 				<div class=\"ok\">
-					Los Cambios Fueron Exitosos
-					<a href=\"#Preferencias_Laborales\"> Ver Seccion </a>
-				</div>";
+					Los Cambios Fueron Exitosos 
+					<a
+					href=\"javascript:cerrarOpen();
+					mostrarDiv('datospersonalesTABLE');
+					mostrarDiv('datosPersonalesOk5');
+					\" >
+					
+					
+					    : Click para Terminar 
+					    
+					    
+					 </a>
+				</div>
+				</div>				
+				
+				";
 	
 	include "/$home/etc/bolsa_rows.inc.php";
+	
+	$echo .= "
+	
+	<script type=\"text/javascript\">
+	    cerrarOpen();
+	    mostrarDiv('preferenciasLaborales');
+	</script>
+	";
 }
 
 /*

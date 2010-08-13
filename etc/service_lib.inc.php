@@ -1,10 +1,10 @@
 <?
 
 $Bester = "
-            <table>
+            <table id=\"BesterTable\" style=\"display: block;\" >
                 <tr>
-                    <td width=\"700px\" height=\"782px\" 
-                    style=\"background: white url($root_img/bester_txt.jpg) no-repeat;\" >
+                    <td width=\"700px\" height=\"950px\" 
+                    style=\"background: white url($root_img/serviciosTxt/bester.jpg) no-repeat;\" >
                     
                         
             
@@ -17,12 +17,12 @@ $Bester = "
 
 $AddTools = "
 
-<table>
+<table id=\"AddToolsTable\" style=\"display: none;\">
                 <tr>
                     
                     
-                    <td width=\"700px\" height=\"782px\" 
-                    style=\"background: white url($root_img/addtools_txt.jpg) no-repeat;\" >
+                    <td width=\"700px\" height=\"1343px\" 
+                    style=\"background: white url($root_img/serviciosTxt/addtools.jpg) no-repeat;\" >
                     
 
             
@@ -34,11 +34,11 @@ $AddTools = "
 
 $Solutions = "
 
-            <table>
+            <table id=\"SolutionsTable\" style=\"display: none;\">
                 <tr>
                     
-                    <td width=\"700px\" height=\"782px\" 
-                    style=\"background: white url($root_img/solutions_txt.jpg) no-repeat;\" >
+                    <td width=\"700px\" height=\"853px\" 
+                    style=\"background: white url($root_img/serviciosTxt/solutions.jpg) no-repeat;\" >
             
                     </td>
                 </tr>
@@ -48,11 +48,11 @@ $Solutions = "
 
 $Side = " 
 
-            <table>
+            <table id=\"SideTable\" style=\"display: none;\">
                 <tr>
                     
-                    <td width=\"700px\" height=\"973px\" 
-                    style=\"background: white url($root_img/sideside_txt.jpg) no-repeat;\" >
+                    <td width=\"700px\" height=\"1169px\" 
+                    style=\"background: white url($root_img/serviciosTxt/sideside.jpg) no-repeat;\" >
             
                     </td>                   
                     
@@ -62,10 +62,10 @@ $Side = "
 
 $MetodoU = "
 
-            <table>
+            <table id=\"MetodoUTable\" style=\"display: none;\">
                 <tr>
                     <td width=\"700px\" height=\"468px\" 
-                    style=\"background: white url($root_img/metodou_txt.jpg) no-repeat;\" >
+                    style=\"background: white url($root_img/serviciosTxt/metodou.jpg) no-repeat;\" >
             
                     </td>
                 </tr>
@@ -76,10 +76,10 @@ $MetodoU = "
 
 
 $External = "
-            <table>
+            <table id=\"ExternalTable\" style=\"display: none;\">
                 <tr>
-                    <td width=\"700px\" height=\"373px\" 
-                    style=\"background: white url($root_img/external_txt.jpg) no-repeat;\" >
+                    <td width=\"700px\" height=\"457px\" 
+                    style=\"background: white url($root_img/serviciosTxt/external.jpg) no-repeat;\" >
             
                     </td>
                 </tr>

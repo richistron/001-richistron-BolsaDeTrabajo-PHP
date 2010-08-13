@@ -5,10 +5,13 @@ $echo .= "
 
 
 
-<form method=\"post\" id=\"ExperienciaLaboralForm\" name=\"ExperienciaLaboralForm\" >
+<form method=\"post\" id=\"ExperienciaLaboralForm\" name=\"ExperienciaLaboralForm\" 
+onsubmit=\"return formTres(this)\" action=\"\" >
+
+<table id=\"ExperienciaLaboralTable\" style=\"display:none;\">
 
 
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
@@ -18,7 +21,7 @@ $echo .= "
 		
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 
 		<td>
 	
@@ -33,7 +36,7 @@ $echo .= "
 
 	</tr>
 	
-		<tr>
+		<tr height=\"40px\">
 
 		<td>
 	
@@ -45,7 +48,7 @@ $echo .= "
 
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
@@ -58,7 +61,7 @@ $echo .= "
 	
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
@@ -71,7 +74,7 @@ $echo .= "
 	
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 	
 	
 		<td>
@@ -93,7 +96,7 @@ $echo .= "
 	</tr>
 	
 	
-	<tr>
+	<tr height=\"40px\">
 	
 	
 		<td>
@@ -108,7 +111,7 @@ $echo .= "
 	
 	</tr>
 	
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
@@ -119,16 +122,24 @@ $echo .= "
 	
 	</tr>
 
-	<tr>
+	<tr height=\"40px\">
 	
 		<td>
 		
 			<div align=\"right\">
 				<input type=\"hidden\" name=\"UId\" value=\"$UId\">
-				<button name=\"eacff088bbdf0de8473fad81c45c4a07\" id=\"eacff088bbdf0de8473fad81c45c4a07\" 
-				value=\"Guardar Cambios\" type=\"submit\">
-				Guardar Cambios
-				</button>
+				
+				
+				
+				
+				
+				
+				<input type=\"submit\" id=\"eacff088bbdf0de8473fad81c45c4a07\"  
+								name=\"eacff088bbdf0de8473fad81c45c4a07\" value=\"Guardar Cambios\">
+				
+				
+				
+				
 			</div>
 		
 		
@@ -138,7 +149,7 @@ $echo .= "
 	</tr>
 
 	
-
+</table>
 
 </form>
 

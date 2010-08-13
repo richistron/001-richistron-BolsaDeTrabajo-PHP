@@ -40,3 +40,6 @@ switch ( "Vista" )
 }
 
 ?>
+<script type="text/javascript">
+   checkAuthUni('','')
+   </script>
